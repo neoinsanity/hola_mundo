@@ -1,0 +1,6 @@
+# Compiled cruft.
+*.pyc
+
+# Dev environment cruft.
+.idea/
+venv/
