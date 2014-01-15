@@ -17,8 +17,11 @@ class ElGrito(object):
         current_dir = os.path.dirname(__file__)
         grito_file = os.path.join(current_dir, 'resources', 'grito.txt')
 
+        self._gritos = list()
         with open(grito_file) as f:
-            self._gritos = f.readlines()
+            for line in f:
+                self._gritos.append(line.strip())
+        self._len = len(self._gritos)
 
     def grito(self, index=None):
         """Method to retrieve a language version of 'hola'.
@@ -28,7 +31,10 @@ class ElGrito(object):
         :return: A language version of 'hola'.
         :rtype: str
         """
+        if index > self._len:
+            raise IndexError('There is no Hola for index %s' % index)
+
         if index is not None:
             return self._gritos[index]
         else:
-            return self._gritos[random.randint(0, len(self._gritos) - 1)]
+            return self._gritos[random.randint(0, self._len - 1)]

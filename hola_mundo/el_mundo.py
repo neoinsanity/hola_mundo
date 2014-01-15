@@ -17,8 +17,11 @@ class ElMundo(object):
         current_dir = os.path.dirname(__file__)
         mundo_file = os.path.join(current_dir, 'resources', 'mundo.txt')
 
+        self._mundos = list()
         with open(mundo_file) as f:
-            self._mundos = f.readlines()
+            for line in f:
+                self._mundos.append(line.strip())
+        self._len = len(self._mundos)
 
     def mundo(self, index=None):
         """Method to retrieve a language version of 'mundo'.
@@ -28,7 +31,10 @@ class ElMundo(object):
         :return: A language version of 'mundo'.
         :rtype: str
         """
+        if index > self._len:
+            raise IndexError('There is no Mundo for index %s' % index)
+
         if index is not None:
-            return self._mundo[index]
+            return self._mundos[index]
         else:
-            return self._mundos[random.randint(0, len(self._mundos) - 1)]
+            return self._mundos[random.randint(0, self._len - 1)]
