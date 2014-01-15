@@ -29,6 +29,6 @@ class ElGrito(object):
         :rtype: str
         """
         if index is not None:
-            return self._mundo[index]
+            return self._gritos[index]
         else:
             return self._gritos[random.randint(0, len(self._gritos) - 1)]

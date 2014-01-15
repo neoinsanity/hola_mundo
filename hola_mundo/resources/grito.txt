@@ -1,7 +1,7 @@
 Hola
-Bonjour
-Hallo
-Kon'nichiwa
-Namastē
 Salve
 Hello
+Hallo
+Bonjour
+Kon'nichiwa
+Namastē
