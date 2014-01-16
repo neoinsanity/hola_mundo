@@ -1,5 +1,9 @@
 """The module for executing the application.
 
+Hola Munda Usage
+=================
+
+Here's how to utilize Hola Mundo application.
 """
 import sys
 import el_grito

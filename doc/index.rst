@@ -5,10 +5,14 @@
 Welcome to Hola Mundo
 ======================
 
+Hola Mundo is the international extension of the venerable `Hello World`.
+
 .. toctree::
-    :maxdepth: 1
+    :maxdepth: 2
 
     hola_mundo
+    hola_mundo.el_grito
+    hola_mundo.el_mundo
 
 Indices and Tables
 ===================

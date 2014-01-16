@@ -19,7 +19,7 @@ import sys, os
 #sys.path.insert(0, os.path.abspath('.'))
 
 # Added package for autodoc generation of documentation
-sys.path.insert(0, os.path.abspath('../hola_mundo'))
+sys.path.insert(0, os.path.abspath('../../hola_mundo'))
 
 # -- General configuration -----------------------------------------------------
 
