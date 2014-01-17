@@ -1,5 +1,9 @@
 """Module to produce translations of 'mundo'.
 
+ElMundo
+========
+
+*ElMundo* is a great way to get translations for `Mundo`.
 """
 import os
 import random

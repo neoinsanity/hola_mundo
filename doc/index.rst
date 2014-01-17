@@ -5,7 +5,7 @@
 Welcome to Hola Mundo
 ======================
 
-Hola Mundo is the international extension of the venerable `Hello World`.
+*Hola Mundo* is the international extension of the venerable `Hello World`.
 
 .. toctree::
     :maxdepth: 2
@@ -20,3 +20,4 @@ Indices and Tables
 * :ref:`genindex`
 * :ref:`modindex`
 * :ref:`search`
+

@@ -1,4 +1,4 @@
 Hola Mundo
 ===========
 
-.. :autodoc:: main
+.. automodule:: hola_mundo.main
