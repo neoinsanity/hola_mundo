@@ -6,3 +6,4 @@
 venv/
 BUILD/
 .coverage
+hola_mundo.egg-info/
