@@ -1,9 +1,18 @@
-"""The module for executing the application.
+#!/usr/bin/env python
+
+"""A command line tool for internationalizing `Hola Mundo`.
 
 Hola Munda Usage
 =================
 
-Here's how to utilize Hola Mundo application.
+*Hola Mundo* makes it easy for you to internationalize your greetings.
+
+The execution of *Hola Mundo* can be accomplished with::
+    python -m hola_mundo.main <index>
+
+    :index: An optional integer that will display `Hola Mundo` in a given
+        language. If not provided, then a random version of `Hola Mundo` will
+        be provided.
 """
 import sys
 import el_grito

@@ -1,5 +1,9 @@
-"""Random salutation generator..
+"""Module to produce translations of 'hola'.
 
+ElGrito
+========
+
+*ElGrito* is a great way to get translations for 'Hola'.
 """
 import random
 
@@ -25,6 +29,8 @@ class ElGrito(object):
         :type index: int
         :return: A language version of 'hola'.
         :rtype: str
+        :except: IndexError - Thrown if there is no language translation for
+            the given index.
         """
         if index > self._len:
             raise IndexError('There is no Hola for index %s' % index)

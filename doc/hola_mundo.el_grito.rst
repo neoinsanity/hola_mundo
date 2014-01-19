@@ -1,5 +1,5 @@
-ElGrito
-========
+El Grito
+=========
 
 .. automodule:: hola_mundo.el_grito
 

@@ -29,6 +29,8 @@ class ElMundo(object):
         :type index: int
         :return: A language version of 'mundo'.
         :rtype: str
+        :except: IndexError - Thrown if there is no language translation for
+            the given index.
         """
         if index > self._len:
             raise IndexError('There is no Mundo for index %s' % index)
