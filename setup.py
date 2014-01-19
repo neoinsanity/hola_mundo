@@ -9,7 +9,7 @@ setup(
     version='0.1.0',
     license='Apache License 2.0',
     description='This is the ultimate Hola Mundo',
-    package=find_packages('hola_mundo'),
+    packages=['hola_mundo', 'hola_mundo.util'],
     install_requires=['PyYAML==3.10',],
     include_package_data = True,
 )
