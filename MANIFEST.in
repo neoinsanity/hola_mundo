@@ -4,3 +4,4 @@
 
 # This file is used to include non python files.
 #-------------------------------------------------
+include hola_mundo/util/config.yaml

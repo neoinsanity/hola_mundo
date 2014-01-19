@@ -1,8 +1,9 @@
 """Random salutation generator..
 
 """
-import os
 import random
+
+from util import config_loader
 
 
 class ElGrito(object):
@@ -14,13 +15,7 @@ class ElGrito(object):
         :return: Nothing is returned.
         :rtype: None
         """
-        current_dir = os.path.dirname(__file__)
-        grito_file = os.path.join(current_dir, 'resources', 'grito.txt')
-
-        self._gritos = list()
-        with open(grito_file) as f:
-            for line in f:
-                self._gritos.append(line.strip())
+        self._gritos = config_loader.get_config('grito')
         self._len = len(self._gritos)
 
     def grito(self, index=None):

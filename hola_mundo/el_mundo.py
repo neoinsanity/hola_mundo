@@ -5,8 +5,9 @@ ElMundo
 
 *ElMundo* is a great way to get translations for `Mundo`.
 """
-import os
 import random
+
+from util import config_loader
 
 
 class ElMundo(object):
@@ -18,13 +19,7 @@ class ElMundo(object):
         :return: Nothing is returned.
         :rtype: None
         """
-        current_dir = os.path.dirname(__file__)
-        mundo_file = os.path.join(current_dir, 'resources', 'mundo.txt')
-
-        self._mundos = list()
-        with open(mundo_file) as f:
-            for line in f:
-                self._mundos.append(line.strip())
+        self._mundos = config_loader.get_config('mundo')
         self._len = len(self._mundos)
 
     def mundo(self, index=None):
