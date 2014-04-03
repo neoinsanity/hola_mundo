@@ -10,6 +10,6 @@ setup(
     license='Apache License 2.0',
     description='This is the ultimate Hola Mundo',
     packages=['hola_mundo', 'hola_mundo.util'],
-    install_requires=['PyYAML==3.10',],
+    install_requires=['PyYAML==3.11',],
     include_package_data = True,
 )
