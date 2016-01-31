@@ -22,11 +22,13 @@ class ElMundo(object):
         self._mundos = config_loader.get_config('mundo')
         self._len = len(self._mundos)
 
-    def mundo(self, index: [int, None] = None) -> str:
+    def mundo(self, index: int = None) -> str:
         """Method to retrieve a language version of 'mundo'.
 
-        :param index: An index key to retrieve a given 'mundo' translation.
-        :type index: [int, None]
+        :param index: An optional index key to retrieve a given 'mundo'
+            translation. If no index is set, then a random translation of
+            world is returned.
+        :type index: int
         :return: A language version of 'mundo'.
         :rtype: str
         :except: IndexError - Thrown if there is no language translation for

@@ -8,11 +8,12 @@ The *config_loader* ensures that additional languages can be supported by
 simply modifying the `config.yaml` file.
 """
 import os
+from typing import List
 
 import yaml
 
 
-def get_config(config_key):
+def get_config(config_key: str) -> List[str]:
     """Retrieves the configuration list for a given config_key.
 
     :param config_key: The key to that target configuration list.

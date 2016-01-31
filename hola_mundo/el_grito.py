@@ -25,7 +25,9 @@ class ElGrito(object):
     def grito(self, index: int = None) -> str:
         """Method to retrieve a language version of 'hola'.
 
-        :param index: An index key to retrieve a given 'hola' translation.
+        :param index: An optional index key to retrieve a given 'hola'
+            translation. If no index key is provided, a random translation of
+            hello is generated.
         :type index: int
         :return: A language version of 'hola'.
         :rtype: str
