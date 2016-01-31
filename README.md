@@ -35,8 +35,12 @@ Hola Munda Usage
 
 The execution of *Hola Mundo* can be accomplished with:
 
-    python -m hola_mundo.main <index>
+    > python -m hola_mundo.main <index>
 
+    or
+    
+    > python hola_mundo/main.py <index>
+    
     :index: An optional integer that will display `Hola Mundo` in a given
         language. If not provided, then a random version of `Hola Mundo` will
         be provided.
