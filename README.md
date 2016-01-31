@@ -51,7 +51,7 @@ For the latest documentation, visit http://neoinsanity.github.io/hola_mundo/
 *For now, you will need to build the documents as per the steps below. This*
 *means setting up the dev environment.*
 
-#todo: raul - git this pushed out.  :(
+*todo: raul - get the docs published.  :( *
 
 ====================
 Project Development
