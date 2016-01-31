@@ -16,7 +16,8 @@ setup(
     licensie='Apache License 2.0',
     description='Hola Mundo!',
     long_description=long_description,
-    packages=['hola_mundo', ],
+    packages=['hola_mundo', 'hola_mundo/util', ],
+    install_requires=['PyYAML==3.11', ],
     include_package_data=True,
     classifiers=[
         'Development Status :: 3 - Alpha',
