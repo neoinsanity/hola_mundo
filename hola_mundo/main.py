@@ -2,7 +2,7 @@
 
 """A command line tool for internationalizing `Hola Mundo`.
 
-Hola Munda Usage
+Hola Mundo Usage
 =================
 
 *Hola Mundo* makes it easy for you to internationalize your greetings.
