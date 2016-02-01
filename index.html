@@ -73,13 +73,89 @@
 project.</p>
 <div class="admonition warning">
 <p class="first admonition-title">Warning</p>
-<p class="last">Rough Drafts and Secion collections.
+<p class="last">Rough Drafts and Section collections.
 Here are the collection of topics that need to be curated into a usable
 form. But until enough documentation generated, and can decide how to
 organize, they will be collected below.</p>
 </div>
-<div class="section" id="publishing-the-documentation">
-<h2>Publishing the Documentation<a class="headerlink" href="#publishing-the-documentation" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="project-development">
+<h1>Project Development<a class="headerlink" href="#project-development" title="Permalink to this headline">¶</a></h1>
+<p>If you are interested in developing <strong>Hola Mundo</strong> code, utilize the helper
+scripts in the <em>hola_mundo/bin</em> directory. Just follow the instruction below
+for setting up the</p>
+<div class="section" id="get-the-source-first">
+<h2>Get the Source First!<a class="headerlink" href="#get-the-source-first" title="Permalink to this headline">¶</a></h2>
+<p>The latest stable release source of <strong>Hola Mundo</strong> can be found on the
+at <a class="reference external" href="https://github.com/neoinsanity/hola_mundo">https://github.com/neoinsanity/hola_mundo</a>.</p>
+</div>
+<div class="section" id="run-the-dev-environment-setup">
+<h2>Run the Dev Environment Setup<a class="headerlink" href="#run-the-dev-environment-setup" title="Permalink to this headline">¶</a></h2>
+<p>Prior to running the dev setup scripts:</p>
+<blockquote>
+<div><ol class="arabic">
+<li><p class="first">Ensure that <em>python3</em> is installed. You can check by using the command:</p>
+<blockquote>
+<div><p>python3 &#8211;version</p>
+</div></blockquote>
+</li>
+<li><p class="first">Ensure that you have <em>virtualenv</em> installed. Check by using the command:</p>
+<blockquote>
+<div><p>virtualenv &#8211;version</p>
+</div></blockquote>
+</li>
+</ol>
+</div></blockquote>
+<p>Keep in mind that all scripts to be executed are assumed to be from the
+project &lt;root&gt; directory. This is the directory with the <em>setup.py</em> file.</p>
+<p>Once you have the pre-requisites out of the way, we can run the development
+configuration scripts.</p>
+<p>Prep the development environment with the command:</p>
+<blockquote>
+<div>&gt; bin/dev_setup.sh</div></blockquote>
+<p>This command will setup the virtualenv for the project in the  directory
+<em>/venv</em>. It will also install the <strong>Hola Mundo</strong> in a develop mode,  with the
+creation of a development egg file.</p>
+<div class="section" id="the-development-environment-usage">
+<h3>The Development Environment Usage<a class="headerlink" href="#the-development-environment-usage" title="Permalink to this headline">¶</a></h3>
+<p>In this section will be demonstrated the dev tools available for a session of
+source development. This features enabling the dev environment, executing the
+unit test with coverage, and building the docs.</p>
+</div>
+</div>
+<div class="section" id="enable-the-development-environment">
+<h2>Enable the Development Environment<a class="headerlink" href="#enable-the-development-environment" title="Permalink to this headline">¶</a></h2>
+<p>This command MUST be executed at the beginning of each developer session. It
+will ensure that the dev tools are available, and that the virtual
+environment is active.</p>
+<p>The command is given below, note that it is sourced to set virtualenv:</p>
+<blockquote>
+<div>&gt; . bin/enable_dev.sh</div></blockquote>
+<p>or</p>
+<blockquote>
+<div>&gt; source bin/enable_dev.sh</div></blockquote>
+<p>Enabling the dev environment adds the <em>bin</em> directory scripts to environment
+<em>PATH</em>. This allows for the commands below to be typed at the prompt from the
+project &lt;root&gt;.</p>
+</div>
+<div class="section" id="running-tests-and-code-coverage">
+<h2>Running Tests and Code Coverage<a class="headerlink" href="#running-tests-and-code-coverage" title="Permalink to this headline">¶</a></h2>
+<p>To run the unit tests:</p>
+<blockquote>
+<div>&gt; run_tests.sh</div></blockquote>
+<p>To view the code coverage report, open the file
+&lt;root&gt;/BUILD/CONVERAGE_REPORT/index.html.</p>
+</div>
+<div class="section" id="building-documentation">
+<h2>Building Documentation<a class="headerlink" href="#building-documentation" title="Permalink to this headline">¶</a></h2>
+<p>To run the documentation generation:</p>
+<blockquote>
+<div>&gt; doc_build.sh</div></blockquote>
+<p>To view the documentation, open the file &lt;root&gt;/BUILD/doc/index.html.</p>
+</div>
+</div>
+<div class="section" id="of-documentation">
+<h1>Of Documentation<a class="headerlink" href="#of-documentation" title="Permalink to this headline">¶</a></h1>
 <p>Setting up documentation for publication required:</p>
 <blockquote>
 <div><ol class="arabic simple">
@@ -89,7 +165,7 @@ organize, they will be collected below.</p>
 </ol>
 </div></blockquote>
 <div class="section" id="restructured-markdown-and-usage">
-<h3>ReStructured Markdown and Usage<a class="headerlink" href="#restructured-markdown-and-usage" title="Permalink to this headline">¶</a></h3>
+<h2>ReStructured Markdown and Usage<a class="headerlink" href="#restructured-markdown-and-usage" title="Permalink to this headline">¶</a></h2>
 <div class="admonition warning">
 <p class="first admonition-title">Warning</p>
 <p class="last">Todo(raul).
@@ -97,7 +173,7 @@ Add cruft about ReStructured text and where it is used in the project.</p>
 </div>
 </div>
 <div class="section" id="documentation-generation-via-sphinx">
-<h3>Documentation Generation via Sphinx<a class="headerlink" href="#documentation-generation-via-sphinx" title="Permalink to this headline">¶</a></h3>
+<h2>Documentation Generation via Sphinx<a class="headerlink" href="#documentation-generation-via-sphinx" title="Permalink to this headline">¶</a></h2>
 <div class="admonition warning">
 <p class="first admonition-title">Warning</p>
 <p class="last">Todo(raul).
@@ -106,7 +182,7 @@ configured?</p>
 </div>
 </div>
 <div class="section" id="documentation-site-and-deployment">
-<h3>Documentation Site and Deployment<a class="headerlink" href="#documentation-site-and-deployment" title="Permalink to this headline">¶</a></h3>
+<h2>Documentation Site and Deployment<a class="headerlink" href="#documentation-site-and-deployment" title="Permalink to this headline">¶</a></h2>
 <p>The selection for the documentation site was based purely for convenience.
 Github Pages was selected, as a github account is at hand. For information on
 the various means to publish to GithHub Pages, see <a class="reference external" href="https://help.github.com/categories/github-pages-basics/">Github Pages Basics</a>.</p>
@@ -131,7 +207,6 @@ documentation whenever it needs to be updated.</p>
 to the deployment url <a class="reference external" href="http://neoinsanity.github.io/hola_mundo/">http://neoinsanity.github.io/hola_mundo/</a>.</p>
 </div>
 </div>
-</div>
 
 
           </div>
@@ -141,13 +216,22 @@ to the deployment url <a class="reference external" href="http://neoinsanity.git
         <div class="sphinxsidebarwrapper"><div class="sphinxlocaltoc">
     <h3><a href="contents.html">Page contents</a></h3>
     <ul>
-<li><a class="reference internal" href="#">Hola Mundo! - Sanitarium Inc.</a><ul>
-<li><a class="reference internal" href="#publishing-the-documentation">Publishing the Documentation</a><ul>
+<li><a class="reference internal" href="#">Hola Mundo! - Sanitarium Inc.</a></li>
+<li><a class="reference internal" href="#project-development">Project Development</a><ul>
+<li><a class="reference internal" href="#get-the-source-first">Get the Source First!</a></li>
+<li><a class="reference internal" href="#run-the-dev-environment-setup">Run the Dev Environment Setup</a><ul>
+<li><a class="reference internal" href="#the-development-environment-usage">The Development Environment Usage</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#enable-the-development-environment">Enable the Development Environment</a></li>
+<li><a class="reference internal" href="#running-tests-and-code-coverage">Running Tests and Code Coverage</a></li>
+<li><a class="reference internal" href="#building-documentation">Building Documentation</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#of-documentation">Of Documentation</a><ul>
 <li><a class="reference internal" href="#restructured-markdown-and-usage">ReStructured Markdown and Usage</a></li>
 <li><a class="reference internal" href="#documentation-generation-via-sphinx">Documentation Generation via Sphinx</a></li>
 <li><a class="reference internal" href="#documentation-site-and-deployment">Documentation Site and Deployment</a></li>
-</ul>
-</li>
 </ul>
 </li>
 </ul>
