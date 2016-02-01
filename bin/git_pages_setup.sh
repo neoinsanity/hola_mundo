@@ -9,7 +9,7 @@ cd ./BUILD/gh_pages
 
 # Initialize the gh_pages orphan branch.
 git checkout --orphan gh-pages
-git rm -rfv
+git rm -rf .
 rm -v '.gitignore'
 echo "My Page" > index.html
 git add index.html
