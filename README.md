@@ -51,12 +51,6 @@ Documentation
 
 For the latest documentation, visit http://neoinsanity.github.io/hola_mundo/
 
-*Please excuse the work in progress. The doc deployment is not complete yet.*
-*For now, you will need to build the documents as per the steps below. This*
-*means setting up the dev environment.*
-
-*todo: raul - get the docs published.  :( *
-
 ====================
 Project Development
 ====================
@@ -76,11 +70,11 @@ Run the Dev Environment Setup
 
 Prior to running the dev setup scripts:
 
-    # Ensure that *python3* is installed. You can check by using the command:
+    1. Ensure that *python3* is installed. You can check by using the command:
     
         python3 --version
     
-    # Ensure that you have *virtualenv* installed. You can check by using the
+    2. Ensure that you have *virtualenv* installed. You can check by using the
      command:
      
         virtualenv --version
