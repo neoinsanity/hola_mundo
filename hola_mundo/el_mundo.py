@@ -17,7 +17,6 @@ class ElMundo(object):
         """Initialize Mundo from a resource file.
 
         :return: Nothing is returned.
-        :rtype: None
         """
         self._mundos = config_loader.get_config('mundo')
         self._len = len(self._mundos)
@@ -28,9 +27,7 @@ class ElMundo(object):
         :param index: An optional index key to retrieve a given 'mundo'
             translation. If no index is set, then a random translation of
             world is returned.
-        :type index: int
         :return: A language version of 'mundo'.
-        :rtype: str
         :except: IndexError - Thrown if there is no language translation for
             the given index.
         """

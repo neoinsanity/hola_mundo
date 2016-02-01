@@ -17,7 +17,6 @@ class ElGrito(object):
         """Initialize ElGrito from a resource file.
 
         :return: Nothing is returned.
-        :rtype: None
         """
         self._gritos = config_loader.get_config('grito')
         self._len = len(self._gritos)
@@ -28,9 +27,7 @@ class ElGrito(object):
         :param index: An optional index key to retrieve a given 'hola'
             translation. If no index key is provided, a random translation of
             hello is generated.
-        :type index: int
         :return: A language version of 'hola'.
-        :rtype: str
         :except: IndexError - Thrown if there is no language translation for
             the given index.
         """
