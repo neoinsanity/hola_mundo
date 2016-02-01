@@ -8,7 +8,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>Hola Mundo! - Sanitarium Inc. &mdash; Hola Mundo 0.0.1 Documentation</title>
+    <title>El Mundo &mdash; Hola Mundo 0.0.1 Documentation</title>
     
     <link rel="stylesheet" href="_static/cloud.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
@@ -29,8 +29,8 @@
     <script type="text/javascript" src="_static/jquery.cookie.js"></script>
     <script type="text/javascript" src="_static/cloud.js"></script>
     <link rel="top" title="Hola Mundo 0.0.1 Documentation" href="contents.html" />
-    <link rel="next" title="Getting Started with Hola Mundo" href="hola_mundo.html" />
-    <link rel="prev" title="Table of Contents" href="contents.html" /> 
+    <link rel="next" title="Config Loader" href="hola_mundo.util.config_loader.html" />
+    <link rel="prev" title="El Grito" href="hola_mundo.el_grito.html" /> 
         <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
   <body role="document">
@@ -49,12 +49,12 @@
           <a href="contents.html" title="Table Of Contents"
              accesskey="C">toc</a> &nbsp; &nbsp;</li>
         <li class="right" >
-          <a href="hola_mundo.html" title="Getting Started with Hola Mundo"
+          <a href="hola_mundo.util.config_loader.html" title="Config Loader"
              accesskey="N">next</a> &nbsp; &nbsp;</li>
         <li class="right" >
-          <a href="contents.html" title="Table of Contents"
+          <a href="hola_mundo.el_grito.html" title="El Grito"
              accesskey="P">previous</a> &nbsp; &nbsp;</li>
-    <li><a href="#">Hola Mundo 0.0.1 Documentation</a> &raquo;</li>
+    <li><a href="index.html">Hola Mundo 0.0.1 Documentation</a> &raquo;</li>
  
       </ul>
     </div>
@@ -66,20 +66,40 @@
         <div class="bodywrapper">
           <div class="body" role="main">
             
-  <img alt="_images/evil-world.png" class="align-right" src="_images/evil-world.png" />
-<div class="section" id="hola-mundo-sanitarium-inc">
-<h1>Hola Mundo! - Sanitarium Inc.<a class="headerlink" href="#hola-mundo-sanitarium-inc" title="Permalink to this headline">¶</a></h1>
-<p><strong>Hola Mundo</strong> is a project that shows off the basic setting up of Python 3
-project.</p>
-<div class="section" id="publishing-the-documentation">
-<h2>Publishing the Documentation<a class="headerlink" href="#publishing-the-documentation" title="Permalink to this headline">¶</a></h2>
-<p>Setup Project for Documentation Deployment to GitHub Pages. See
-<a class="reference external" href="https://help.github.com/categories/github-pages-basics/">Github Pages Basics</a> for details on setting up your git hub project for
-publishing.</p>
-<p>For simplicity to this project, the <a class="reference external" href="https://help.github.com/articles/creating-project-pages-manually/">Creating Project Pages manually</a> was
-the selected method. No new account to setup, as a github account is
-obviously at hand.</p>
+  <div class="section" id="module-hola_mundo.el_mundo">
+<span id="el-mundo"></span><h1>El Mundo<a class="headerlink" href="#module-hola_mundo.el_mundo" title="Permalink to this headline">¶</a></h1>
+<p>Module to produce translations of &#8216;mundo&#8217;.</p>
+<div class="section" id="elmundo">
+<h2>ElMundo<a class="headerlink" href="#elmundo" title="Permalink to this headline">¶</a></h2>
+<p><em>ElMundo</em> is a great way to get translations for <cite>Mundo</cite>.</p>
 </div>
+<dl class="class">
+<dt id="hola_mundo.el_mundo.ElMundo">
+<em class="property">class </em><code class="descclassname">hola_mundo.el_mundo.</code><code class="descname">ElMundo</code><a class="headerlink" href="#hola_mundo.el_mundo.ElMundo" title="Permalink to this definition">¶</a></dt>
+<dd><p>Class that produces a random language version of &#8216;mundo&#8217;.</p>
+<dl class="method">
+<dt id="hola_mundo.el_mundo.ElMundo.mundo">
+<code class="descname">mundo</code><span class="sig-paren">(</span><em>index: int=None</em><span class="sig-paren">)</span> &rarr; str<a class="headerlink" href="#hola_mundo.el_mundo.ElMundo.mundo" title="Permalink to this definition">¶</a></dt>
+<dd><p>Method to retrieve a language version of &#8216;mundo&#8217;.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>index</strong> &#8211; An optional index key to retrieve a given &#8216;mundo&#8217;
+translation. If no index is set, then a random translation of
+world is returned.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">A language version of &#8216;mundo&#8217;.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Except:</th><td class="field-body">IndexError - Thrown if there is no language translation for
+the given index.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
 </div>
 
 
@@ -90,8 +110,8 @@ obviously at hand.</p>
         <div class="sphinxsidebarwrapper"><div class="sphinxlocaltoc">
     <h3><a href="contents.html">Page contents</a></h3>
     <ul>
-<li><a class="reference internal" href="#">Hola Mundo! - Sanitarium Inc.</a><ul>
-<li><a class="reference internal" href="#publishing-the-documentation">Publishing the Documentation</a></li>
+<li><a class="reference internal" href="#">El Mundo</a><ul>
+<li><a class="reference internal" href="#elmundo">ElMundo</a></li>
 </ul>
 </li>
 </ul>
@@ -99,18 +119,18 @@ obviously at hand.</p>
   </div>
   <div class="sphinxprev">
     <h4>Previous page</h4>
-    <p class="topless"><a href="contents.html"
-                          title="Previous page">&larr; Table of Contents</a></p>
+    <p class="topless"><a href="hola_mundo.el_grito.html"
+                          title="Previous page">&larr; El Grito</a></p>
   </div>
   <div class="sphinxnext">
     <h4>Next page</h4>
-    <p class="topless"><a href="hola_mundo.html"
-                          title="Next page">&rarr; Getting Started with Hola Mundo</a></p>
+    <p class="topless"><a href="hola_mundo.util.config_loader.html"
+                          title="Next page">&rarr; Config Loader</a></p>
   </div>
   <div role="note" aria-label="source link">
     <h3>This Page</h3>
     <ul class="this-page-menu">
-      <li><a href="_sources/index.txt"
+      <li><a href="_sources/hola_mundo.el_mundo.txt"
             rel="nofollow">Show Source</a></li>
     </ul>
    </div>
@@ -146,12 +166,12 @@ obviously at hand.</p>
           <a href="contents.html" title="Table Of Contents"
              >toc</a> &nbsp; &nbsp;</li>
         <li class="right" >
-          <a href="hola_mundo.html" title="Getting Started with Hola Mundo"
+          <a href="hola_mundo.util.config_loader.html" title="Config Loader"
              >next</a> &nbsp; &nbsp;</li>
         <li class="right" >
-          <a href="contents.html" title="Table of Contents"
+          <a href="hola_mundo.el_grito.html" title="El Grito"
              >previous</a> &nbsp; &nbsp;</li>
-    <li><a href="#">Hola Mundo 0.0.1 Documentation</a> &raquo;</li>
+    <li><a href="index.html">Hola Mundo 0.0.1 Documentation</a> &raquo;</li>
  
       </ul>
     </div>
