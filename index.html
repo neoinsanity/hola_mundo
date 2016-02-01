@@ -71,14 +71,65 @@
 <h1>Hola Mundo! - Sanitarium Inc.<a class="headerlink" href="#hola-mundo-sanitarium-inc" title="Permalink to this headline">¶</a></h1>
 <p><strong>Hola Mundo</strong> is a project that shows off the basic setting up of Python 3
 project.</p>
+<div class="admonition warning">
+<p class="first admonition-title">Warning</p>
+<p class="last">Rough Drafts and Secion collections.
+Here are the collection of topics that need to be curated into a usable
+form. But until enough documentation generated, and can decide how to
+organize, they will be collected below.</p>
+</div>
 <div class="section" id="publishing-the-documentation">
 <h2>Publishing the Documentation<a class="headerlink" href="#publishing-the-documentation" title="Permalink to this headline">¶</a></h2>
-<p>Setup Project for Documentation Deployment to GitHub Pages. See
-<a class="reference external" href="https://help.github.com/categories/github-pages-basics/">Github Pages Basics</a> for details on setting up your git hub project for
-publishing.</p>
+<p>Setting up documentation for publication required:</p>
+<blockquote>
+<div><ol class="arabic simple">
+<li>Selection of documentation markdown.</li>
+<li>Configuring the documentation generator.</li>
+<li>Selecting and deploying to a documentation site.</li>
+</ol>
+</div></blockquote>
+<div class="section" id="restructured-markdown-and-usage">
+<h3>ReStructured Markdown and Usage<a class="headerlink" href="#restructured-markdown-and-usage" title="Permalink to this headline">¶</a></h3>
+<div class="admonition warning">
+<p class="first admonition-title">Warning</p>
+<p class="last">Todo(raul).
+Add cruft about ReStructured text and where it is used in the project.</p>
+</div>
+</div>
+<div class="section" id="documentation-generation-via-sphinx">
+<h3>Documentation Generation via Sphinx<a class="headerlink" href="#documentation-generation-via-sphinx" title="Permalink to this headline">¶</a></h3>
+<div class="admonition warning">
+<p class="first admonition-title">Warning</p>
+<p class="last">Todo(raul).
+Add cruft about Sphinx. How is it used? Where does it run? Where is it
+configured?</p>
+</div>
+</div>
+<div class="section" id="documentation-site-and-deployment">
+<h3>Documentation Site and Deployment<a class="headerlink" href="#documentation-site-and-deployment" title="Permalink to this headline">¶</a></h3>
+<p>The selection for the documentation site was based purely for convenience.
+Github Pages was selected, as a github account is at hand. For information on
+the various means to publish to GithHub Pages, see <a class="reference external" href="https://help.github.com/categories/github-pages-basics/">Github Pages Basics</a>.</p>
 <p>For simplicity to this project, the <a class="reference external" href="https://help.github.com/articles/creating-project-pages-manually/">Creating Project Pages manually</a> was
 the selected method. No new account to setup, as a github account is
-obviously at hand.</p>
+obviously at hand. To demonstrate all the steps for this project a setup
+script and a deployment script are provided.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Scripts must be executed in &lt;root&gt; dir, with development
+environment enabled.</p>
+</div>
+<p>The <a class="reference external" href="https://github.com/neoinsanity/hola_mundo/blob/master/bin/git_pages_setup.sh">git_pages_setup.sh</a> script provides the steps to setup the project git
+repository for documentation deployment.</p>
+<blockquote>
+<div>(venv)root/&gt; git_pages_set.sh</div></blockquote>
+<p>The <a class="reference external" href="https://github.com/neoinsanity/hola_mundo/blob/master/bin/deploy_docs.sh">deploy_docs.sh</a> script provides the steps to deploy the project
+documentation whenever it needs to be updated.</p>
+<blockquote>
+<div>(venv)root/&gt; deploy_docs.sh</div></blockquote>
+<p>Upon successfully documentation deployment, you can view the changes by going
+to the deployment url <a class="reference external" href="http://neoinsanity.github.io/hola_mundo/">http://neoinsanity.github.io/hola_mundo/</a>.</p>
+</div>
 </div>
 </div>
 
@@ -91,7 +142,12 @@ obviously at hand.</p>
     <h3><a href="contents.html">Page contents</a></h3>
     <ul>
 <li><a class="reference internal" href="#">Hola Mundo! - Sanitarium Inc.</a><ul>
-<li><a class="reference internal" href="#publishing-the-documentation">Publishing the Documentation</a></li>
+<li><a class="reference internal" href="#publishing-the-documentation">Publishing the Documentation</a><ul>
+<li><a class="reference internal" href="#restructured-markdown-and-usage">ReStructured Markdown and Usage</a></li>
+<li><a class="reference internal" href="#documentation-generation-via-sphinx">Documentation Generation via Sphinx</a></li>
+<li><a class="reference internal" href="#documentation-site-and-deployment">Documentation Site and Deployment</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
