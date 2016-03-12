@@ -2,6 +2,8 @@
 ###  MANIFEST.ini  ###
 #=================================================
 
-# This file is used to include non python files.
+# Example of how to include data files..
 #-------------------------------------------------
+include README.md
+include VERSION
 include hola_mundo/util/config.yaml
