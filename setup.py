@@ -13,7 +13,7 @@ setup(
     author='Raul Gonzalez',
     author_email='mindbender@gmail.com',
     url='https//github.com/neoinsanity/hola_mundo',
-    licensie='Apache License 2.0',
+    license='Apache License 2.0',
     description='Hola Mundo!',
     long_description=long_description,
     packages=['hola_mundo', 'hola_mundo/util', ],
@@ -23,7 +23,6 @@ setup(
         'Development Status :: 3 - Alpha',
         'Intended Audience :: Developers',
         'License :: OSI Approved :: Apache Software License',
-        'Operating Systems :: OS Independent',
         'Programming Language :: Python :: 3',
         'Topic :: Software Development',
 
