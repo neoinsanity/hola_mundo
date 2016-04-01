@@ -1,4 +1,4 @@
-#!/usr/bin/env bash -x
+#!/usr/bin/env bash
 
 ###########################################################
 ##### Create virtualenv for development.
@@ -8,7 +8,7 @@
 # for instructions on installing virutalenv.
 ###########################################################
 
-# Create the virtual environment
+### Create the virtual environment.
 # The virtualenv will attempt to make python 3
 # environment. If the '-p python3' doesn't work, them most
 # likely there is no python3 installed on local system.
@@ -19,7 +19,7 @@ echo "------------------------------------------------"
 echo "- Virtual environment created in directory 'venv'"
 echo "------------------------------------------------"
 
-# Activate the virtual environment
+# Activate the virtual environment.
 echo
 echo "------------------------------------------------"
 echo "----- Activating virtual env with command. -----"
@@ -30,7 +30,7 @@ echo "------------------------------------------------"
 echo
 
 ###########################################################
-##### Install the windmills package in development mode.
+##### Install the hola_mundo package in development mode.
 ###########################################################
 echo
 echo "------------------------------------------------"
