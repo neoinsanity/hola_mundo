@@ -454,6 +454,21 @@ pytest = ">=4.6"
 testing = ["fields", "hunter", "process-tests", "pytest-xdist", "virtualenv"]
 
 [[package]]
+name = "python-docs-theme"
+version = "2025.2"
+description = "The Sphinx theme for the CPython docs and related projects"
+optional = false
+python-versions = ">=3.9"
+groups = ["doc"]
+files = [
+    {file = "python_docs_theme-2025.2-py3-none-any.whl", hash = "sha256:6f2b234d5521d7a23eb91f3f597d99a3cc2c832ab764e23a4aaa245f5bd1e65b"},
+    {file = "python_docs_theme-2025.2.tar.gz", hash = "sha256:dbf43d771453976a3f49c51c80cb44a9d302156be607d4f729552d95278ee3d8"},
+]
+
+[package.dependencies]
+sphinx = ">=3.4"
+
+[[package]]
 name = "pyyaml"
 version = "6.0.2"
 description = "YAML parser and emitter for Python"
@@ -723,4 +738,4 @@ zstd = ["zstandard (>=0.18.0)"]
 [metadata]
 lock-version = "2.1"
 python-versions = ">=3.12"
-content-hash = "3e8ea328295c78ae05952cc60670fc6aded04e5106a60f67f1dd4f0e9e30e63f"
+content-hash = "8013b3b4745362a0769c7e34e2840d1fb08094b5252bc2f49c68682d967aa2aa"
