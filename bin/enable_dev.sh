@@ -23,11 +23,10 @@
 
 # if necessary, setup the dev bin scripts
 DEV_BIN="./bin"
-if [ -d "$DEV_BIN" ] && [[ ! $PATH =~ (^|:)$DEV_BIN(:|$) ]]
-then
+if [ -d "$DEV_BIN" ] && [[ ! $PATH =~ (^|:)$DEV_BIN(:|$) ]]; then
   echo "Adding './bin' to path to ease use of dev scripts."
   PATH=$PATH:$DEV_BIN
 fi
 
-# enable the virtual environment
-source venv/bin/activate
+# enable the virtual environment via poetry command.
+eval "$(poetry env activate)"

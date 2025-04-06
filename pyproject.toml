@@ -1,0 +1,50 @@
+# Hola Mundo project configuration.
+[project]
+name = "hola_mundo"
+version = "2.0.0"
+description = ""
+authors = [
+    { name = "Raul Gonzalez", email = "mindbender@gmail.com" }
+]
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "pyyaml (>=6.0.2,<7.0.0)"
+]
+
+## Custom build settings.
+#[tool.poetry.build]
+## Include the data file, a non python script artifact.
+#include = [
+#    "hola_mundo/util/config.yaml"
+#]
+
+# Configures the test group to be optional.
+# To install test dependencies, utilize the poetry command:
+# > poetry install --with test
+[tool.poetry.group.test]
+optional = true
+
+# The test dependency packages.
+[tool.poetry.group.test.dependencies]
+pytest = "^8.3.5"
+pytest-cov = "^6.1.1"
+
+# Configures the doc group to be optional.
+# To install the doc dependencies, utilize the poetry command:
+# > poetry install --with doc
+[tool.poetry.group.doc]
+optional = true
+
+# The doc dependency packages.
+[tool.poetry.group.doc.dependencies]
+sphinx = "^8.2.3"
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+# Test configuration section
+[tool.pytest.ini_options]
+addopts = "test -v --junit-xml=test-output/test-results.xml --cov=hola_mundo --cov-report=html --cov-config=coverage.ini"
+testpaths = ["test"]

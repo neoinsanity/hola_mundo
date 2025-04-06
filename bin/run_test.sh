@@ -1,4 +1,4 @@
-#!/usr/bin/env bash -x
+#!/usr/bin/env bash
 ###########################################################
 ### Script to execute unit tests.
 ###########################################################
@@ -18,4 +18,4 @@ rm -f .coverage
 rm -rf BUILD/COVERAGE_REPORT
 
 # Execute the tests as per the given config.
-nosetests -c bin/nose.cfg
+pytest

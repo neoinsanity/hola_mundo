@@ -3,9 +3,10 @@
 
 # Dev environment cruft.
 .idea/
-venv/
+.venv/
 BUILD/
 .coverage
+test-output
 hola_mundo.egg-info/
 
 # Deployment cruft.
