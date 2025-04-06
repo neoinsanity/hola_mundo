@@ -23,5 +23,5 @@ def get_config(config_key: str) -> [AnyStr]:
     config_file = os.path.join(current_dir, 'config.yaml')
 
     with open(config_file) as f:
-        conf = yaml.load(f, yaml.Loader)
+        conf = yaml.safe_load(f, yaml.Loader)
         return conf[config_key]
